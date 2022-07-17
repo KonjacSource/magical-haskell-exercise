@@ -43,3 +43,13 @@ add (S m) n = S (add m n)
 mult :: Nat -> Nat -> Nat
 mult Z     _ = Z
 mult (S m) n = add (mult m n) n
+
+-- Given two lists, add up the corresponding elements.
+addList :: [Int] -> [Int] -> [Int]
+addList []     []     = []
+addList (x:xs) (y:ys) = (x + y) : addList xs ys
+
+-- Given a operator f and tow lists, apply f to corresponding elements.
+myZip :: (a -> b -> c) -> [a] -> [b] -> [c]
+myZip _ []     []     = []
+myZip f (x:xs) (y:ys) = f x y : myZip f xs ys

@@ -34,6 +34,15 @@ add = undefined
 mult :: Nat -> Nat -> Nat
 mult = undefined
 
+-- Given two lists, add up the corresponding elements.
+addList :: [Int] -> [Int] -> [Int]
+addList = undefined
+
+-- Given a operator f and tow lists, apply f to corresponding elements.
+myZip :: (a -> b -> c) -> [a] -> [b] -> [c]
+myZip = undefined
+
 -- Mark this as true when finished.
 finished :: Bool
 finished = False
+
